@@ -1,7 +1,6 @@
 package com.vpetelsky;
 
-/*
-2) Реализовать метод который вернет строку String, в которой через пробел все числа от 1 до 99 со
+/* 2) Реализовать метод который вернет строку String, в которой через пробел все числа от 1 до 99 со
 следующими изменениями:
 (!!!Сам метод не должен ничего печатать в консоль, он просто должен вернуть строку!!!)
 
@@ -15,7 +14,7 @@ public class Task2 {
     private static final int MAX = 99;
 
     public static void initHelloWorld() {
-        System.out.println(getHelloWorld());
+        System.out.println(getHelloWorld() + "\n");
     }
 
     private static String getHelloWorld() {

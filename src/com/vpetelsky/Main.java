@@ -9,8 +9,13 @@ public class Main {
         System.out.println("Press ENTER to show 'Task #1'");
         scanner.nextLine();
         Task1.initDeposit();
+
         System.out.println("Press ENTER to show 'Task #2'");
         scanner.nextLine();
         Task2.initHelloWorld();
+
+        System.out.println("Press ENTER to show 'Task #3'");
+        scanner.nextLine();
+        Task3.initBinarySearch();
     }
 }
