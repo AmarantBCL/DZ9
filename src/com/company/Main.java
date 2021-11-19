@@ -9,24 +9,12 @@ import java.util.Scanner;
 */
 public class Main {
 
-    public static final double INTEREST_RATE = 0.015;
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter deposit amount: ");
-        int initialAmount = scanner.nextInt();
-        System.out.println("Enter years: ");
-        int years = scanner.nextInt();
-
-        System.out.printf("The sum will be: %.2f$", getDeposit(initialAmount, years));
+        System.out.println("Press ENTER to show 'Task #1'");
+        scanner.nextLine();
+        Task1.initDeposit();
     }
 
-    private static double getDeposit(double initialAmount, int years) {
-        double sum = initialAmount;
-        for (int i = 0; i < years * 12; i++) {
-            sum += initialAmount * INTEREST_RATE;
-        }
 
-        return sum;
-    }
 }
