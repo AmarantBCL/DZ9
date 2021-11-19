@@ -1,4 +1,4 @@
-package com.company;
+package com.vpetelsky;
 
 import java.util.Scanner;
 

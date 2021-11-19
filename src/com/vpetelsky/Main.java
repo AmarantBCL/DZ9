@@ -1,4 +1,4 @@
-package com.company;
+package com.vpetelsky;
 
 import java.util.Scanner;
 
@@ -13,6 +13,4 @@ public class Main {
         scanner.nextLine();
         Task2.initHelloWorld();
     }
-
-
 }

@@ -1,4 +1,4 @@
-package com.company;
+package com.vpetelsky;
 
 /*
 2) Реализовать метод который вернет строку String, в которой через пробел все числа от 1 до 99 со
