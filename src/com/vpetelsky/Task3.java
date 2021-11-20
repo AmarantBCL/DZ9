@@ -10,10 +10,11 @@ import java.util.Scanner;
 public class Task3 {
     public static void initBinarySearch() {
         Scanner scanner = new Scanner(System.in);
+        //int[] testArray = new int[] {23, 2, 12, 22, 53, 94, 32, 54, 11, 45}; // Unsorted
+        int[] testArray = new int[] {2, 11, 12, 22, 23, 32, 45, 53, 54, 94}; // Sorted
         System.out.println("Enter a number to find: ");
-        //int[] testArray = new int[] { 23, 2, 12, 22, 53, 94, 32, 54, 11, 45 }; // Unsorted
-        int[] testArray = new int[]{2, 11, 12, 22, 23, 32, 45, 53, 54, 94}; // Sorted
         int number = scanner.nextInt();
+
         System.out.printf("Searching result for number '%d' returned '%s'\n", number, binarySearch(testArray, number));
     }
 

@@ -8,19 +8,20 @@ import java.util.Scanner;
 */
 public class Task1 {
 
-    public static final double INTEREST_RATE = 1.5;
+    private static final double INTEREST_RATE = 1.5;
 
     public static void initDeposit() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter deposit amount: ");
         int initialAmount = scanner.nextInt();
-        System.out.println("Enter years: ");
+        System.out.println("Enter years number: ");
         int years = scanner.nextInt();
+        double depositAmount = getDepositAmount(initialAmount, years);
 
-        System.out.printf("The sum will be: %.2f$\n\n", Task1.getDeposit(initialAmount, years));
+        System.out.printf("In %d years the deposit amount will be: %.2f$\n\n", years, depositAmount);
     }
 
-    public static double getDeposit(double initialAmount, int years) {
+    private static double getDepositAmount(double initialAmount, int years) {
         double sum = initialAmount;
         for (int i = 0; i < years * 12; i++) {
             sum += initialAmount * (INTEREST_RATE / 100);

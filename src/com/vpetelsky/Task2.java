@@ -14,10 +14,10 @@ public class Task2 {
     private static final int MAX = 99;
 
     public static void initHelloWorld() {
-        System.out.println(getHelloWorld() + "\n");
+        System.out.println(getHelloWorldNumbers() + "\n");
     }
 
-    private static String getHelloWorld() {
+    private static String getHelloWorldNumbers() {
         StringBuilder sb = new StringBuilder();
         for (int i = MIN; i < MAX + 1; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
@@ -31,6 +31,6 @@ public class Task2 {
             }
         }
 
-        return sb.toString();
+        return sb.toString().trim();
     }
 }
